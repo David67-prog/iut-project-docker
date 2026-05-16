@@ -10,3 +10,8 @@ services:
 
   redis:
     image: redis:latest
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
